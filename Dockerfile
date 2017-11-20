@@ -1,7 +1,7 @@
 FROM debian:sid
 
 ## Install build dependencies
-RUN apt-get -y -qq update
+
 
 WORKDIR /tmp
 

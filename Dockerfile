@@ -5,7 +5,7 @@ FROM debian:sid
 
 WORKDIR /tmp
 
-RUN apt-get -y install -qq wget unzip
+RUN apt-get -y update && apt-get -y install -qq wget unzip
 RUN apt-get -y install -qq cmake libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev libboost-dev libboost-program-options-dev 
 
 RUN 		wget -q https://github.com/opencv/opencv/archive/master.zip -O opencv.zip \

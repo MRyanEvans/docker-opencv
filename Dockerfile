@@ -8,11 +8,11 @@ WORKDIR /tmp
 RUN apt-get -y update && apt-get -y install -qq wget unzip
 RUN apt-get -y install -qq cmake libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev libboost-dev libboost-program-options-dev 
 
-RUN 		wget -q https://github.com/opencv/opencv/archive/master.zip -O opencv.zip \
+RUN 		wget -q "https://github.com/opencv/opencv/archive/3.2.0.zip" -O opencv.zip \
 		&&	unzip -q opencv.zip \
 		&&	mv opencv-master opencv \
 		&&	rm opencv.zip \
-		&&	wget -q https://github.com/opencv/opencv_contrib/archive/master.zip -O opencv_contrib.zip \
+		&&	wget -q "https://github.com/opencv/opencv_contrib/archive/3.2.0.zip" -O opencv_contrib.zip \
 		&&	unzip -q opencv_contrib.zip \
 		&&	mv opencv_contrib-master opencv_contrib \
 		&&	rm opencv_contrib.zip \

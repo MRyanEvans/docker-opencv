@@ -10,11 +10,11 @@ RUN apt-get -y install -qq cmake libgtk2.0-dev pkg-config libavcodec-dev libavfo
 
 RUN 		wget -q "https://github.com/opencv/opencv/archive/3.2.0.zip" -O opencv.zip \
 		&&	unzip -q opencv.zip \
-		&&	mv opencv-master opencv \
+		&&	mv opencv-3.2.0 opencv \
 		&&	rm opencv.zip \
 		&&	wget -q "https://github.com/opencv/opencv_contrib/archive/3.2.0.zip" -O opencv_contrib.zip \
 		&&	unzip -q opencv_contrib.zip \
-		&&	mv opencv_contrib-master opencv_contrib \
+		&&	mv opencv_contrib-3.2.0 opencv_contrib \
 		&&	rm opencv_contrib.zip \
 		
 		&& 	cd opencv \
